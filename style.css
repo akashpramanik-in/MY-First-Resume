@@ -1,0 +1,123 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+/* HEADER */
+#head {
+    background-color: rgb(28, 41, 59);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#about {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* GENERIC CARD SECTIONS */
+#about2,
+#edu,
+#skills,
+#projects,
+#contact {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* SECTION TITLES */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* ABOUT TEXT */
+#Hello {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* EDUCATION / PROJECT / CONTACT ITEMS */
+#Btech,
+#school,
+#prot,
+#ecom,
+#blog,
+#email,
+#phone,
+#inst {
+    margin-top: 12px;
+    padding: 14px;
+    background-color: #f2f5f6;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+/* ------------ SKILLS SECTION ------------- */
+
+.skills-title {
+    margin-bottom: 20px;
+}
+
+/* Grid container for skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+}
+
+/* Individual skill pill */
+.skill {
+    background-color: #f2f5f6;
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.skill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* FOOTER */
+#footer {
+    background-color: rgb(28, 41, 59);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.85rem;
+}
