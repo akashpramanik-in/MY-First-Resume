@@ -21,6 +21,9 @@ body {
     color: white;
     text-align: center;
     padding: 40px 20px;
+    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
+    animation-delay: 0.1s;
 }
 
 #name {
@@ -48,7 +51,16 @@ body {
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
 }
+
+/* Animation delays for sections */
+#about2 { animation-delay: 0.3s; }
+#edu    { animation-delay: 0.5s; }
+#skills { animation-delay: 0.7s; }
+#projects { animation-delay: 0.9s; }
+#contact  { animation-delay: 1.1s; }
 
 /* SECTION TITLES */
 h2 {
@@ -81,6 +93,7 @@ h2 {
     text-align: center;
     font-size: 0.95rem;
     font-weight: 400;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* ------------ SKILLS SECTION ------------- */
@@ -104,12 +117,21 @@ h2 {
     text-align: center;
     font-size: 0.95rem;
     font-weight: 500;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.skill:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+/* HOVER EFFECTS (cards + skills) */
+.skill:hover,
+#Btech:hover,
+#school:hover,
+#prot:hover,
+#ecom:hover,
+#blog:hover,
+#email:hover,
+#phone:hover,
+#inst:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 
 /* FOOTER */
@@ -120,4 +142,16 @@ h2 {
     padding: 15px;
     margin-top: 30px;
     font-size: 0.85rem;
+}
+
+/* ENTRY ANIMATION KEYFRAMES */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
